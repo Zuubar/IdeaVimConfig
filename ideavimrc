@@ -18,9 +18,6 @@ let mapleader = " "
 Plug 'machakann/vim-highlightedyank'
 " Commentary plugin
 Plug 'tpope/vim-commentary'
-" Easymotion plugin <C-;>
-Plug 'easymotion/vim-easymotion'
-set notimeout
 
 "" Key mappings
 "" ========================================================
@@ -29,18 +26,20 @@ set notimeout
 map Q gq
 
 map <leader>f <Action>(ReformatCode)
-map <leader>sf <Action>(SearchEverywhere)
+map <leader>se <Action>(SearchEverywhere)
+map <leader>sf <Action>(GotoFile)
 map <leader>sg <Action>(FindInPath)
 map <leader>w <Action>(Switcher)
 map <leader>t <Action>(ActivateTerminalToolWindow)
 map K <Action>(ShowHoverInfo)
+map O <Action>(FileStructurePopup)
+map V <Action>(SelectInProjectView)
 map ga <Action>(ShowIntentionActions)
 map gr <Action>(ShowUsages)
 map gd <Action>(GotoDeclaration)
 map gn <Action>(RenameElement)
 map gg <Action>(Generate)
-map O <Action>(FileStructurePopup)
-map V <Action>(SelectInProjectView)
+map go <Action>(OptimizeImports)
 map ]d <Action>(GotoNextError)
 map [d <Action>(GotoPreviousError)
 map ]c <Action>(VcsShowNextChangeMarker)
