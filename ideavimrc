@@ -1,0 +1,47 @@
+"" Base Settings
+"" ========================================================
+
+set scrolloff=10
+set clipboard+=unnamedplus
+
+set incsearch
+set smartcase
+set hlsearch
+set surround
+
+"" Plugin Settings
+"" ========================================================
+
+let mapleader = " "
+
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+" Easymotion plugin <C-;>
+Plug 'easymotion/vim-easymotion'
+set notimeout
+
+"" Key mappings
+"" ========================================================
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+map <leader>f <Action>(ReformatCode)
+map <leader>sf <Action>(SearchEverywhere)
+map <leader>sg <Action>(FindInPath)
+map <leader>w <Action>(Switcher)
+map <leader>t <Action>(ActivateTerminalToolWindow)
+map K <Action>(ShowHoverInfo)
+map ga <Action>(ShowIntentionActions)
+map gr <Action>(ShowUsages)
+map gd <Action>(GotoDeclaration)
+map gn <Action>(RenameElement)
+map gg <Action>(Generate)
+map O <Action>(FileStructurePopup)
+map V <Action>(SelectInProjectView)
+map ]d <Action>(GotoNextError)
+map [d <Action>(GotoPreviousError)
+map ]c <Action>(VcsShowNextChangeMarker)
+map [c <Action>(VcsShowPrevChangeMarker)
