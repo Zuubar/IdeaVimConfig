@@ -25,15 +25,15 @@ Plug 'tpope/vim-commentary'
 " Don't use Ex mode, use Q for formatting.
 map Q gq
 
-map <leader>f <Action>(ReformatCode)
-map <leader>se <Action>(SearchEverywhere)
-map <leader>sf <Action>(GotoFile)
-map <leader>sg <Action>(FindInPath)
+map <leader>e <Action>(SearchEverywhere)
+map <leader>f <Action>(GotoFile)
+map <leader>g <Action>(FindInPath)
 map <leader>w <Action>(Switcher)
 map <leader>t <Action>(ActivateTerminalToolWindow)
 map K <Action>(ShowHoverInfo)
 map fo <Action>(FileStructurePopup)
 map fs <Action>(SelectInProjectView)
+map gf <Action>(ReformatCode)
 map ga <Action>(ShowIntentionActions)
 map gr <Action>(ShowUsages)
 map gd <Action>(GotoDeclaration)
