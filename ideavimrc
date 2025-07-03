@@ -25,6 +25,7 @@ Plug 'tpope/vim-commentary'
 " Don't use Ex mode, use Q for formatting.
 map Q gq
 
+map <leader>a <Action>(Annotate)
 map <leader>e <Action>(SearchEverywhere)
 map <leader>f <Action>(GotoFile)
 map <leader>g <Action>(FindInPath)
