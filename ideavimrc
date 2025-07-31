@@ -8,6 +8,7 @@ set incsearch
 set smartcase
 set hlsearch
 set surround
+set noerrorbells
 
 "" Plugin Settings
 "" ========================================================
